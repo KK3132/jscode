@@ -1,0 +1,32 @@
+console.log("GUESSING GAME");
+console.log("==RULES==:system will generate a random number between 1 & 10 and you have to guess that number in as much as less attemt")
+console.log("GUESS A NUMBER BETWEEN 1 AND 10");
+let x = Math.floor((Math.random() * 10) + 1);
+var i = 0;
+var b = prompt("ENTER YOUR NUMBER")
+if (b == x) {
+  console.log("!!==CONGRATULATIONS===!!!!you have guessed the correct number");
+  console.log("==YOUR ATTEMT== :-", 1, "(@) (@)");
+  console.log("==YOUR SCORE== :-", 10);
+}
+else (console.log("**wrong guess**"))
+ if(b!=x)
+ {
+   do
+  {
+      a=prompt("guess again")
+    if(a> x)
+    {
+  console.log("**SORRY** you entered a greater number");
+}
+ if(a < x) {
+  console.log("**SORRY** you entered a smaller number");
+}
+i = i + 1
+  }
+while (a != x) {
+  console.log("!!==CONGRATULATIONS===!!!!you have guessed the correct number");
+  console.log("==YOUR ATTEMT== :-", i + 1, "(@) (@)");
+  console.log("==YOUR SCORE== :-", 9 - i);
+}
+ }
